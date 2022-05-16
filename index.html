@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./public/dist/semantic.min.css">
+<link rel="stylesheet" href="./public/styles.css">
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+<script src="./public/dist/semantic.min.js"></script>
+</head>
+<body>
+  
+  <div class="ui sidebar inverted vertical menu">
+    <a class="item" href="#home">
+      <i class="fas fa-home"></i>
+      Home
+    </a>
+    <a class="item" href="#speciality">
+      <i class="fas fa-cog"></i>
+      Speciality
+    </a>
+    <a class="item" href="#popular">
+      <i class="fas fa-hamburger" ></i>
+     Popular Dishes
+    </a>
+    <a class="item" href="#order">
+      <i class="fas fa-pizza-slice" ></i>
+     Order
+    </a>
+  </div>
+  <div class="pusher">
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+  <a href="#" class="logo"><i class="fas fa-utensils"></i>AFROFOODS</a>
+  <nav class="navbar">
+    <!-- <a href="#home">home</a>
+    <a href="#speciality">speciality</a>
+    <a href="#popular">popular</a>
+    <a href="#gallery">Gallery</a> -->
+    </nav>
+    <div class="ui loading search" id="diacriticsexample">
+      <div class="ui icon input">
+        <input class="prompt" type="text" placeholder="Search Delicacies...">
+        <i class="search icon"></i>
+      </div>
+      <div class="results"></div>
+
+    </div> 
+  
+  
+</header>
+
+<section id="home" class="home">
+  <div class="content">
+    <h4 class="ui yellow inverted header">Food Made with passion</h4>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+      excepturi, quos error laudantium mollitia alias sunt nam labo placeat
+      nobis maxime, corrupti nemo. Iusto sint dicta iure consequatur
+      obcaecati.
+    </p>
+    <button class="ui inverted yellow basic button">Order Now</button>
+  </div>
+  <div class="image">
+    <img src="./images/home-img.png" alt="" />
+  </div>
+</section>
+<section class="speciality" id="speciality">
+<marquee behavior="" direction=""> <h4 class="ui yellow inverted header">Best Selling Delicacies</h4></marquee> 
+  <div class="ui three column grid">
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <img class="image" src="./images/Hnet.com-image (1).jpg" " alt="">
+        </div>
+        <div class="content">
+          <a class="header">Tasty Jollof rice</a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <img class="image" src="./images/Hnet.com-image (2).jpg" " alt="">
+
+        </div>
+        <div class="content">
+          <a class="header">Ice cream</a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <img class="image" src="./images/IMG9.jpg" alt="" />
+        
+        </div>
+        <div class="content">
+          <a class="header">Healthy breakfast</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <img class="image" src="./images/Hnet.com-image (4).jpg" alt="" />
+
+     
+        </div>
+        <div class="content">
+          <a class="header">Amazing pizza</a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <img class="image" src="./images/Hnet.com-image.jpg" alt="" />
+
+        </div>
+        <div class="content">
+          <a class="header">cold/iced drinks</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <img class="image" src="./images/IMG40.jpg" alt="" /> 
+        </div>
+        <div class="content">
+          <a class="header">Unique small chops</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="popular" id="popular">
+ <marquee behavior="" direction=""> <h4 class="ui yellow inverted header">Highest Rated Dishes</h4></marquee>
+  <div class="ui four cards">
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG13.jpg" alt="" />
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating" id="rating" data-icon="star"  data-rating="3"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG23.jpg" alt="" />
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating"  id="rating" data-rating="2"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG14.jpg"  alt="" />
+
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating"   id="rating" data-rating="3"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG18.jpg" alt="" />
+
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating"  id="rating" data-rating="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG25.jpg" alt="" />
+      </div>
+      <div class="extra">
+        Ratings
+        <div class="ui yellow rating"  id="rating" data-rating="3"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG26.jpg" alt="" />
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating"  id="rating" data-rating="3"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG10.jpg" alt="" />
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating"  id="rating" data-rating="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="./images/IMG28.jpg" alt="" />
+      </div>
+      <div class="extra">
+        Ratings:
+        <div class="ui yellow rating"  id="rating" data-rating="4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="order" id="order">
+ <marquee behavior="" direction=""> <h4 class="ui yellow inverted header">Place your Order!</h4></marquee>
+  <div class="row">
+    <div class="image">
+      <img src="./images/order-img.jpg" alt="" />
+    </div>
+    <form action="">
+      <div class="inputBox">
+        <input type="text" placeholder="name" />
+        <input type="email" placeholder="email" />
+        <input type="number" placeholder="Phone number" />
+      </div>
+        <div class="ui clearable multiple selection dropdown">
+         
+          <input type="hidden" name="language" value="Choose your Order">
+          <i class="dropdown icon"></i>
+          <div class="default text">Choose your order</div>
+          <div class="menu">
+            <div class="item">Pounded Yam</div>
+            <div class="item">Ice cream</div>
+            <div class="item">Chicken pepper soup</div>
+            <div class="item">Sharwarma</div>
+            <div class="item">Spiced Shrimps</div>
+            <div class="item">Moin moin and pap</div>
+            <div class="item">Salad</div>
+            <div class="item">Greek</div>
+            <div class="item">Hungarian</div>
+            <div class="item">Italian</div>
+            <div class="item">Japanese</div>
+            <div class="item">Korean</div>
+            <div class="item">Lithuanian</div>
+            <div class="item">Persian</div>
+            <div class="item">Polish</div>
+            <div class="item">Portuguese</div>
+            <div class="item">Russian</div>
+            <div class="item">Spanish</div>
+            <div class="item">Swedish</div>
+            <div class="item">Turkish</div>
+            <div class="item">Vietnamese</div>
+          </div>
+        </div>
+      
+      <!-- <div class="ui form">
+        <div class="inline fields">
+          <label for="fruit">Select your payment method</label>
+          <div class="field">
+            <div class="ui radio checkbox checked">
+              <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+              <label>Cash</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label>Transfer</label>
+            </div>
+          </div>
+        </div>
+        </div> -->
+      <div class="ui form">
+        <div class="field">
+          <label></label>
+          <div class="ui calendar">
+            <div class="ui input left icon">
+              <i class="calendar icon"></i>
+              <input type="text" placeholder="Pick a data for your order to be delivered" name="date">
+            </div>        
+          </div>
+        </div>
+      </div>
+      
+      <div class="ui form">
+        <div class="field">
+          <label style="height: .7rem;"></label>
+          <textarea placeholder="Enter your Address to be delivered"></textarea>
+        </div>
+        <button class="ui inverted yellow basic button" id="btn" type="button"> 
+        <div class="ui animated button" tabindex="0">
+          <div class="visible content">Pay Now</div>
+          <div class="hidden content">
+           $1.50 for delivery
+          </div>
+        </div>
+        </button>
+        <button class="ui button active" id="btns" type="button">Place Order</button>
+    </form>
+  </div>
+  <div class="ui modal">
+    <div class="header">Afrofoods Payment</div>
+    <div class="content">
+        <div class="ui form">
+        <div class="inline fields">
+          <label for="fruit">Select your payment method</label>
+          <div class="field">
+            <div class="ui radio checkbox checked">
+              <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+              <label>Pay now</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label>Pay on delivery</label>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="share">
+    <button class="ui facebook button">
+      <i class="facebook icon"></i>
+      Facebook
+    </button>
+    <button class="ui twitter button">
+      <i class="twitter icon"></i>
+      Twitter
+    </button>
+   
+    
+    <button class="ui linkedin button">
+      <i class="linkedin icon"></i>
+      LinkedIn
+    </button>
+    <button class="ui instagram button">
+      <i class="instagram icon"></i>
+      Instagram
+    </button>
+    <button class="ui youtube button">
+      <i class="youtube icon"></i>
+      YouTube
+    </button>
+    <button class="ui whatsapp button">
+      <i class="whatsapp icon"></i>
+      WhatsApp
+    </button>
+  
+  </div>
+  <div class="credit">
+    designed by
+    <span
+      ><a href="https://linktr.ee/Devopeoluwa" target="_blank"
+        >Devopeoluwa</a
+      ></span
+    >
+    |all rights reserved
+  </div>
+</section> 
+  </div>
+
+
+<script src="./public/app.js"></script>
+
+</body>
+</html>
